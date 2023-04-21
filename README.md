@@ -7,7 +7,7 @@ This bot was created for the Laurier Pride Society Discord server, and for purpo
 
 If you'd like to add a command to Kelp, it's very easy to do! All you need is to create a module in the proper folder including a 'data' property with the appropriate command builder and an 'execute' property with the code to execute upon recieving the command. NOTE: commands requiring intents not already included in the index.js file must add their intents there in order for the command to function correctly. Information about which intents are required for which actions can be found [here](https://discord.com/developers/docs/topics/gateway#list-of-intents).
 
-Functions that execute when an event is recieved need to be written in `index.js` using their respective event listener. Wrapping these functions in a `try { } catch { }` loop is highly reccomended, as is creating a seperate module for large functions.
+Functions that execute when an event is recieved need to be written in `index.js` using their respective [event listener](https://discord.js.org/#/docs/discord.js/main/typedef/Events). Wrapping these functions in a `try { } catch { }` loop is highly reccomended, as is creating a seperate module for large functions.
 
 New config options only need to be added to `data/config_template.json`. The main file will take care of the rest.
 
