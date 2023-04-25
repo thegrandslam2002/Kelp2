@@ -11,7 +11,7 @@ Message Components (eg. buttons and select menus) work almost exactly the same a
 
 Functions that execute when an event is recieved need to be written in `index.js` using their respective [event listener](https://discord.js.org/#/docs/discord.js/main/typedef/Events). Wrapping these functions in a `try { } catch { }` loop is highly reccomended, as is creating a seperate module for large functions.
 
-New config options only need to be added to `data/config_template.json`. The main file will take care of the rest.
+New config options only need to be added to `data/templates/config_template.json`. The main file will take care of the rest.
 
 All code submissions are expected to conform to the following guidelines:
 - Modules must be self-contained, meaning a change to one should not require changes to the rest of the project
