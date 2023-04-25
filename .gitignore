@@ -1,3 +1,5 @@
 node_modules
 application_data.json
 config.json
+data
+!data/templates/*
