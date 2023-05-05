@@ -58,6 +58,10 @@ const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits
 // Gets the commands from their files and registers them as a collection 
 client.commands = new Collection()
 function registerClientCommands(client) {
+    // Checks that the directories exist and creates them if they don't
+    if (!fs.existsSync(path.join(__dirname, 'slash_commands'))) fs.mkdirSync(path.join(__dirname, 'slash_commands'))
+    if (!fs.existsSync(path.join(__dirname, 'context_menu_commands'))) fs.mkdirSync(path.join(__dirname, 'context_menu_commands'))
+
     for (const folder of ['slash_commands', 'context_menu_commands']) {
         // Gets the contents of a folder
         const commandsPath = path.join(__dirname, folder)
