@@ -21,7 +21,8 @@ module.exports = {
         if (Object.hasOwn(rule['conditions'], 'attachment')) conditionNames.push("`has attachment`")
         if (Object.hasOwn(rule['conditions'], 'user')) conditionNames.push(`\`sent by:\` <@${rule['conditions'].user}>`)
         if (Object.hasOwn(rule['conditions'], 'role')) conditionNames.push(`\`has role:\` <@&${rule['conditions'].role}>`)
-        ruleDesc = `React with ${rule['emoji']} to messages sent in <#${rule['channelID']}>` + conditionNames.join(', ')
+        ruleDesc = `React with ${rule['emoji']} to messages sent in <#${rule['channelID']}>`
+        if (conditionNames.length != 0) ruleDesc += ", conditions: " + conditionNames.join(', ')
 
         // Removes the rule from the list of rules
         delete reactionRules[interaction.values[0]]
