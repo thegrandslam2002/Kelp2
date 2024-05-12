@@ -24,7 +24,7 @@ All code submissions are expected to conform to the following guidelines:
 
 ## Making your own bot using Kelp's code:
 
-Kelp runs on Node.js, so installing Kelp should be as simple as downloading Node.js on your machine, running `npm install discord.js`, and cloning the repo. In order for the bot to run, you'll need to input your token and client ID into the application_data.json file, then run `index.js`. Slash commands must be registered first by running `manual_register.js`, with the additional requirement of your server ID from the config.json file. Commands can then be re-registered remotely using the /reload command. More information about bot development is available [here](https://discord.js.org/#/).
+Kelp runs on Node.js, so installing Kelp should be as simple as downloading Node.js on your machine, running `npm install`, and cloning the repo. In order for the bot to run, you'll need to input your token and client ID into the application_data.json file, then run `index.js`. Slash commands must be registered first by running `manual_register.js`, with the additional requirement of your server ID from the config.json file. Commands can then be re-registered remotely using the /reload command. More information about bot development is available [here](https://discord.js.org/#/).
 
 Kelp was designed to run on only one server at a time. If you attempt to use it on multiple, it WILL NOT function correctly.
 
